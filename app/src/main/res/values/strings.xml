@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">scheduleISPU</string>
+    <string name="monday">ПН</string>
+    <string name="tuesday">ВТ</string>
+    <string name="wednesday">СР</string>
+    <string name="thursday">ЧТ</string>
+    <string name="friday">ПТ</string>
+    <string name="saturday">СБ</string>
+    <string name="sunday">ВС</string>
+    <string name="first_week">Первая неделя</string>
+    <string name="second_week">Вторая неделя</string>
+    <string name="condition">Текущий день:</string>
 </resources>
