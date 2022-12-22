@@ -241,49 +241,49 @@ public class MainActivity extends AppCompatActivity {
                 switch (view.getId()){
                     case R.id.b_mnday:
                         current_day = 0;
-                        current_button.setBackgroundColor(getResources().getColor(R.color.purple_700));
+                        current_button.setBackgroundColor(getResources().getColor(R.color.purple_500));
                         view.setBackgroundColor(getResources().getColor(R.color.purple_200));
                         current_button = view;
                         updateConditon();
                         break;
                     case R.id.b_tuday:
                         current_day = 1;
-                        current_button.setBackgroundColor(getResources().getColor(R.color.purple_700));
+                        current_button.setBackgroundColor(getResources().getColor(R.color.purple_500));
                         view.setBackgroundColor(getResources().getColor(R.color.purple_200));
                         current_button = view;
                         updateConditon();
                         break;
                     case R.id.b_wdday:
                         current_day = 2;
-                        current_button.setBackgroundColor(getResources().getColor(R.color.purple_700));
+                        current_button.setBackgroundColor(getResources().getColor(R.color.purple_500));
                         view.setBackgroundColor(getResources().getColor(R.color.purple_200));
                         current_button = view;
                         updateConditon();
                         break;
                     case R.id.b_thday:
                         current_day = 3;
-                        current_button.setBackgroundColor(getResources().getColor(R.color.purple_700));
+                        current_button.setBackgroundColor(getResources().getColor(R.color.purple_500));
                         view.setBackgroundColor(getResources().getColor(R.color.purple_200));
                         current_button = view;
                         updateConditon();
                         break;
                     case R.id.b_frday:
                         current_day = 4;
-                        current_button.setBackgroundColor(getResources().getColor(R.color.purple_700));
+                        current_button.setBackgroundColor(getResources().getColor(R.color.purple_500));
                         view.setBackgroundColor(getResources().getColor(R.color.purple_200));
                         current_button = view;
                         updateConditon();
                         break;
                     case R.id.b_stday:
                         current_day = 5;
-                        current_button.setBackgroundColor(getResources().getColor(R.color.purple_700));
+                        current_button.setBackgroundColor(getResources().getColor(R.color.purple_500));
                         view.setBackgroundColor(getResources().getColor(R.color.purple_200));
                         current_button = view;
                         updateConditon();
                         break;
                     case R.id.b_snday:
                         current_day = 6;
-                        current_button.setBackgroundColor(getResources().getColor(R.color.purple_700));
+                        current_button.setBackgroundColor(getResources().getColor(R.color.purple_500));
                         view.setBackgroundColor(getResources().getColor(R.color.purple_200));
                         current_button = view;
                         updateConditon();
@@ -291,13 +291,13 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.b_fst_week:
                         first_week = true;
                         b_first_wk.setBackgroundColor(getResources().getColor(R.color.purple_200));
-                        b_second_wk.setBackgroundColor(getResources().getColor(R.color.purple_700));
+                        b_second_wk.setBackgroundColor(getResources().getColor(R.color.purple_500));
                         updateConditon();
                         break;
                     case R.id.b_scn_week:
                         first_week = false;
                         b_second_wk.setBackgroundColor(getResources().getColor(R.color.purple_200));
-                        b_first_wk.setBackgroundColor(getResources().getColor(R.color.purple_700));
+                        b_first_wk.setBackgroundColor(getResources().getColor(R.color.purple_500));
                         updateConditon();
                         break;
                 };
