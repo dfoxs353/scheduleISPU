@@ -9,7 +9,11 @@
     <string name="sunday">ВС</string>
     <string name="first_week">Первая неделя</string>
     <string name="second_week">Вторая неделя</string>
-    <string name="condition">Текущий день:</string>
+    <string name="condition_day">Текущий день:</string>
+    <string name="chosen_week">Выбранная неделя:</string>
+    <string name="chosen_day">Выбранный день:</string>
+    <string name="chosen_less">Выбранное время:</string>
     <string name="group">2-45[2]</string>
     <string name="faculty">ИВТФ</string>
+    <string name="Note">Заметка</string>
 </resources>
