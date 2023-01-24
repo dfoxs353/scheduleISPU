@@ -235,8 +235,14 @@ public class MainActivity extends AppCompatActivity {
         buttonslist[5] = findViewById(R.id.b_stday);
         buttonslist[6] = findViewById(R.id.b_snday);
 
-        lessadapter.setCurrent_day(buttonslist[current_day].getText().toString());
-        lessadapter.setCurrent_week(b_first_wk.getText().toString());
+        lessadapter.setCurrent_day(current_day);
+        if(first_week){
+            lessadapter.setCurrent_week(0);
+        }
+        else{
+            lessadapter.setCurrent_week(1);
+        }
+
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
@@ -244,7 +250,7 @@ public class MainActivity extends AppCompatActivity {
                 switch (view.getId()){
                     case R.id.b_mnday:
                         current_day = 0;
-                        lessadapter.setCurrent_day(buttonslist[current_day].getText().toString());
+                        lessadapter.setCurrent_day(current_day);
                         current_button.setBackgroundColor(getResources().getColor(R.color.purple_500));
                         view.setBackgroundColor(getResources().getColor(R.color.purple_200));
                         current_button = view;
@@ -252,7 +258,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.b_tuday:
                         current_day = 1;
-                        lessadapter.setCurrent_day(buttonslist[current_day].getText().toString());
+                        lessadapter.setCurrent_day(current_day);
                         current_button.setBackgroundColor(getResources().getColor(R.color.purple_500));
                         view.setBackgroundColor(getResources().getColor(R.color.purple_200));
                         current_button = view;
@@ -260,7 +266,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.b_wdday:
                         current_day = 2;
-                        lessadapter.setCurrent_day(buttonslist[current_day].getText().toString());
+                        lessadapter.setCurrent_day(current_day);
                         current_button.setBackgroundColor(getResources().getColor(R.color.purple_500));
                         view.setBackgroundColor(getResources().getColor(R.color.purple_200));
                         current_button = view;
@@ -268,7 +274,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.b_thday:
                         current_day = 3;
-                        lessadapter.setCurrent_day(buttonslist[current_day].getText().toString());
+                        lessadapter.setCurrent_day(current_day);
                         current_button.setBackgroundColor(getResources().getColor(R.color.purple_500));
                         view.setBackgroundColor(getResources().getColor(R.color.purple_200));
                         current_button = view;
@@ -276,7 +282,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.b_frday:
                         current_day = 4;
-                        lessadapter.setCurrent_day(buttonslist[current_day].getText().toString());
+                        lessadapter.setCurrent_day(current_day);
                         current_button.setBackgroundColor(getResources().getColor(R.color.purple_500));
                         view.setBackgroundColor(getResources().getColor(R.color.purple_200));
                         current_button = view;
@@ -284,7 +290,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.b_stday:
                         current_day = 5;
-                        lessadapter.setCurrent_day(buttonslist[current_day].getText().toString());
+                        lessadapter.setCurrent_day(current_day);
                         current_button.setBackgroundColor(getResources().getColor(R.color.purple_500));
                         view.setBackgroundColor(getResources().getColor(R.color.purple_200));
                         current_button = view;
@@ -292,7 +298,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.b_snday:
                         current_day = 6;
-                        lessadapter.setCurrent_day(buttonslist[current_day].getText().toString());
+                        lessadapter.setCurrent_day(current_day);
                         current_button.setBackgroundColor(getResources().getColor(R.color.purple_500));
                         view.setBackgroundColor(getResources().getColor(R.color.purple_200));
                         current_button = view;
@@ -300,14 +306,14 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.b_fst_week:
                         first_week = true;
-                        lessadapter.setCurrent_week(b_first_wk.getText().toString());
+                        lessadapter.setCurrent_week(0);
                         b_first_wk.setBackgroundColor(getResources().getColor(R.color.purple_200));
                         b_second_wk.setBackgroundColor(getResources().getColor(R.color.purple_500));
                         updateConditon();
                         break;
                     case R.id.b_scn_week:
                         first_week = false;
-                        lessadapter.setCurrent_week(b_second_wk.getText().toString());
+                        lessadapter.setCurrent_week(1);
                         b_second_wk.setBackgroundColor(getResources().getColor(R.color.purple_200));
                         b_first_wk.setBackgroundColor(getResources().getColor(R.color.purple_500));
                         updateConditon();
