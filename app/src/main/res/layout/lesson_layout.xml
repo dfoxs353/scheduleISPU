@@ -41,16 +41,16 @@
             <TextView
                 android:id="@+id/t_lesson"
                 android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
                 android:gravity="center_vertical|center_horizontal"
                 android:singleLine="false"
                 android:text="лек. Электроника и схемотехника Карандашев А.П. Б029 "
                 android:textColor="@color/black"
-                app:layout_constraintBottom_toTopOf="@+id/t_note"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/t_time"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -59,17 +59,17 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
                 android:gravity="center_vertical|center_horizontal"
                 android:singleLine="false"
                 android:text="Note"
                 android:textColor="@color/indigo"
                 android:textStyle="bold|italic"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.513"
-                app:layout_constraintStart_toEndOf="@+id/t_time" />
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/t_time"
+                app:layout_constraintTop_toBottomOf="@+id/t_lesson" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
