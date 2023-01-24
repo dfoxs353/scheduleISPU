@@ -153,7 +153,6 @@ public class LessAdapter extends RecyclerView.Adapter<LessAdapter.LessViewHolder
 
             String lesson = less.get(position);
             String time = list_time.get(position);
-
             if(lesson.contains("лек.")){
                 holder.time.setBackgroundResource(R.drawable.clips_orange);
             }else if(lesson.contains("сем.")){
